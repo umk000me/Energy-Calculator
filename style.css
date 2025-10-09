@@ -1,0 +1,93 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #e8f5e9, #bbdefb);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #1b2826;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.calculator {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+.results {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tip-box {
+  background-color: #c8e6c9;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.tips {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+footer {
+  background-color: #1b2826;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}

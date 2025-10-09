@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Energy Saving Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>⚡ Smart Energy Saving Calculator ⚡</h1>
+    <p>Learn how much electricity and money you can save by reducing appliance usage!</p>
+  </header>
+
+  <!-- Calculator Section -->
+  <section class="calculator">
+    <h2>Enter Appliance Details</h2>
+
+    <label>Appliance Name:</label>
+    <select id="appliance" onchange="setDefaultPower()">
+      <option value="">-- Select Appliance --</option>
+      <option value="fan">Fan</option>
+      <option value="light">Light (LED Bulb)</option>
+      <option value="tubeLight">Tube Light</option>
+      <option value="tv">Television</option>
+      <option value="fridge">Refrigerator</option>
+      <option value="ac">Air Conditioner</option>
+      <option value="washingMachine">Washing Machine</option>
+      <option value="computer">Computer / Laptop</option>
+      <option value="waterHeater">Water Heater</option>
+      <option value="iron">Electric Iron</option>
+    </select>
+
+    <label>Power Consumption (W):</label>
+    <input type="number" id="power" placeholder="e.g., 80" readonly>
+
+    <label>Hours Saved per Day:</label>
+    <input type="number" id="hours" placeholder="e.g., 2">
+
+    <label>Electricity Cost (₹/kWh):</label>
+    <input type="number" id="cost" placeholder="e.g., 6">
+
+    <button onclick="calculateSavings()">Calculate</button>
+  </section>
+
+  <!-- Result Section -->
+  <section class="results" id="results">
+    <h2>💰 Your Savings</h2>
+    <div class="card">
+      <h3>Daily Energy Saved</h3>
+      <p id="energySaved">0 kWh</p>
+    </div>
+    <div class="card">
+      <h3>Daily Money Saved</h3>
+      <p id="moneyDay">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Monthly Money Saved</h3>
+      <p id="moneyMonth">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Yearly Money Saved</h3>
+      <p id="moneyYear">₹0</p>
+    </div>
+
+    <div class="tip-box">
+      <h3>Motivational Tip 💡</h3>
+      <p id="motivation">Turn off one fan for 2 hours daily and save ₹36/month!</p>
+    </div>
+  </section>
+
+  <!-- Awareness Section -->
+  <section class="tips">
+    <h2>🌿 Energy Saving Tips</h2>
+    <marquee behavior="scroll" direction="up" scrollamount="2" height="120">
+      <ul>
+        <li>Use LED bulbs instead of CFLs.</li>
+        <li>Switch off appliances when not in use.</li>
+        <li>Unplug chargers once devices are charged.</li>
+        <li>Use natural light during daytime.</li>
+        <li>Install solar panels for long-term savings.</li>
+        <li>Keep refrigerator door closed tightly.</li>
+        <li>Use energy-efficient appliances.</li>
+        <li>Turn off computers when not in use.</li>
+      </ul>
+    </marquee>
+  </section>
+
+  <footer>
+    <p> ⚡ 🌱 | Awareness through Technology ⚡ </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
